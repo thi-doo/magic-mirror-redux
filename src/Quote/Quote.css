@@ -1,0 +1,21 @@
+.Quote {
+  flex: 50%;
+  height: 25vh;
+  text-align: center;
+  font-size: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Quote .body {
+  flex: fit-content;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.Quote .author {
+  flex: fit-content;
+}
