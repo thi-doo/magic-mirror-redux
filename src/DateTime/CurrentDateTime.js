@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 
 import "./CurrentDateTime.css";
 
@@ -18,10 +18,10 @@ class CurrentDateTime extends React.Component {
 
 export default CurrentDateTime;
 
-CurrentDateTime.proptypes = {
-  value: Proptypes.shape({
-    day: Proptypes.string,
-    date: Proptypes.string,
-    time: Proptypes.string
+CurrentDateTime.propTypes = {
+  value: PropTypes.shape({
+    day: PropTypes.string,
+    date: PropTypes.string,
+    time: PropTypes.string
   })
 };
