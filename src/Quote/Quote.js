@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 
 import "./Quote.css";
 
@@ -16,9 +16,9 @@ class Quote extends React.Component {
 
 export default Quote;
 
-Quote.proptypes = {
-  value: Proptypes.shape({
-    quote: Proptypes.string,
-    author: Proptypes.string
+Quote.propTypes = {
+  value: PropTypes.shape({
+    quote: PropTypes.string,
+    author: PropTypes.string
   })
 };

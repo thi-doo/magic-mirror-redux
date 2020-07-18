@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 import "./CurrentWeather.css";
 
 class CurrentWeather extends React.Component {
@@ -21,9 +21,9 @@ class CurrentWeather extends React.Component {
 export default CurrentWeather;
 
 CurrentWeather.propTypes = {
-  value: Proptypes.shape({
-    location: Proptypes.string,
-    description: Proptypes.string,
-    temperature: Proptypes.number
+  value: PropTypes.shape({
+    location: PropTypes.string,
+    description: PropTypes.string,
+    temperature: PropTypes.number
   })
 };

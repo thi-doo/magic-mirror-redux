@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 import "./CryptoPrice.css";
 
 class CryptoPrice extends React.Component {
@@ -44,16 +44,16 @@ class CryptoPrice extends React.Component {
 export default CryptoPrice;
 
 CryptoPrice.propTypes = {
-  value: Proptypes.shape({
-    bitcoin: Proptypes.shape({
-      price: Proptypes.number,
-      lastUpdated: Proptypes.string,
-      changeIn24Hours: Proptypes.number
+  value: PropTypes.shape({
+    bitcoin: PropTypes.shape({
+      price: PropTypes.number,
+      lastUpdated: PropTypes.string,
+      changeIn24Hours: PropTypes.number
     }),
-    ethereum: Proptypes.shape({
-      price: Proptypes.number,
-      lastUpdated: Proptypes.string,
-      changeIn24Hours: Proptypes.number
+    ethereum: PropTypes.shape({
+      price: PropTypes.number,
+      lastUpdated: PropTypes.string,
+      changeIn24Hours: PropTypes.number
     })
   })
 };
